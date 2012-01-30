@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D460AE3914D6896E001B8775 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D460AE3814D6896E001B8775 /* Cocoa.framework */; };
+		D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4114D6896E001B8775 /* InfoPlist.strings */; };
+		D460AE4514D6896E001B8775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4414D6896E001B8775 /* main.m */; };
+		D460AE4914D6896E001B8775 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4714D6896E001B8775 /* Credits.rtf */; };
+		D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4B14D6896E001B8775 /* SMAppDelegate.m */; };
+		D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4D14D6896E001B8775 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D460AE3414D6896E001B8775 /* InspectorTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D460AE3814D6896E001B8775 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D460AE3B14D6896E001B8775 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D460AE3C14D6896E001B8775 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D460AE3D14D6896E001B8775 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */ = {isa = PBXFileReference; path = "InspectorTabBar-Info.plist"; sourceTree = "<group>"; };
+		D460AE4214D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D460AE4414D6896E001B8775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */ = {isa = PBXFileReference; path = "InspectorTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		D460AE4814D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D460AE4A14D6896E001B8775 /* SMAppDelegate.h */ = {isa = PBXFileReference; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		D460AE4B14D6896E001B8775 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		D460AE4E14D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D460AE3114D6896E001B8775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D460AE3914D6896E001B8775 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D460AE2914D6896E001B8775 = {
+			isa = PBXGroup;
+			children = (
+				D460AE3E14D6896E001B8775 /* InspectorTabBar */,
+				D460AE3714D6896E001B8775 /* Frameworks */,
+				D460AE3514D6896E001B8775 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D460AE3514D6896E001B8775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D460AE3414D6896E001B8775 /* InspectorTabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D460AE3714D6896E001B8775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D460AE3814D6896E001B8775 /* Cocoa.framework */,
+				D460AE3A14D6896E001B8775 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D460AE3A14D6896E001B8775 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D460AE3B14D6896E001B8775 /* AppKit.framework */,
+				D460AE3C14D6896E001B8775 /* CoreData.framework */,
+				D460AE3D14D6896E001B8775 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D460AE3E14D6896E001B8775 /* InspectorTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D460AE4A14D6896E001B8775 /* SMAppDelegate.h */,
+				D460AE4B14D6896E001B8775 /* SMAppDelegate.m */,
+				D460AE4D14D6896E001B8775 /* MainMenu.xib */,
+				D460AE3F14D6896E001B8775 /* Supporting Files */,
+			);
+			path = InspectorTabBar;
+			sourceTree = "<group>";
+		};
+		D460AE3F14D6896E001B8775 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */,
+				D460AE4114D6896E001B8775 /* InfoPlist.strings */,
+				D460AE4414D6896E001B8775 /* main.m */,
+				D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */,
+				D460AE4714D6896E001B8775 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D460AE3314D6896E001B8775 /* InspectorTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D460AE5214D6896E001B8775 /* Build configuration list for PBXNativeTarget "InspectorTabBar" */;
+			buildPhases = (
+				D460AE3014D6896E001B8775 /* Sources */,
+				D460AE3114D6896E001B8775 /* Frameworks */,
+				D460AE3214D6896E001B8775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InspectorTabBar;
+			productName = InspectorTabBar;
+			productReference = D460AE3414D6896E001B8775 /* InspectorTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D460AE2B14D6896E001B8775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Stephan Michels Softwareentwicklung und Beratung";
+			};
+			buildConfigurationList = D460AE2E14D6896E001B8775 /* Build configuration list for PBXProject "InspectorTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D460AE2914D6896E001B8775;
+			productRefGroup = D460AE3514D6896E001B8775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D460AE3314D6896E001B8775 /* InspectorTabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D460AE3214D6896E001B8775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */,
+				D460AE4914D6896E001B8775 /* Credits.rtf in Resources */,
+				D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D460AE3014D6896E001B8775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D460AE4514D6896E001B8775 /* main.m in Sources */,
+				D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D460AE4114D6896E001B8775 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D460AE4214D6896E001B8775 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D460AE4714D6896E001B8775 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D460AE4814D6896E001B8775 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D460AE4D14D6896E001B8775 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D460AE4E14D6896E001B8775 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D460AE5014D6896E001B8775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D460AE5114D6896E001B8775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D460AE5314D6896E001B8775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InspectorTabBar/InspectorTabBar-Prefix.pch";
+				INFOPLIST_FILE = "InspectorTabBar/InspectorTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D460AE5414D6896E001B8775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InspectorTabBar/InspectorTabBar-Prefix.pch";
+				INFOPLIST_FILE = "InspectorTabBar/InspectorTabBar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D460AE2E14D6896E001B8775 /* Build configuration list for PBXProject "InspectorTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D460AE5014D6896E001B8775 /* Debug */,
+				D460AE5114D6896E001B8775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D460AE5214D6896E001B8775 /* Build configuration list for PBXNativeTarget "InspectorTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D460AE5314D6896E001B8775 /* Debug */,
+				D460AE5414D6896E001B8775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D460AE2B14D6896E001B8775 /* Project object */;
+}
