@@ -8,8 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+
+@class SMTabBar;
+
 @interface SMAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet SMTabBar *tabBar;
 
 @end

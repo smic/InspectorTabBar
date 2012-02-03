@@ -13,6 +13,14 @@
 		D460AE4914D6896E001B8775 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4714D6896E001B8775 /* Credits.rtf */; };
 		D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4B14D6896E001B8775 /* SMAppDelegate.m */; };
 		D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4D14D6896E001B8775 /* MainMenu.xib */; };
+		D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE5614D68A49001B8775 /* SMTabBar.m */; };
+		D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */; };
+		D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */; };
+		D4EA425414DC200700FE05D9 /* Image5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425314DC200700FE05D9 /* Image5.png */; };
+		D4EA425614DC201300FE05D9 /* Image1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425514DC201300FE05D9 /* Image1.png */; };
+		D4EA425814DC202400FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425714DC202300FE05D9 /* Image2.png */; };
+		D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425914DC202D00FE05D9 /* Image3.png */; };
+		D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425B14DC203B00FE05D9 /* Image4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +29,25 @@
 		D460AE3B14D6896E001B8775 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D460AE3C14D6896E001B8775 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D460AE3D14D6896E001B8775 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */ = {isa = PBXFileReference; path = "InspectorTabBar-Info.plist"; sourceTree = "<group>"; };
+		D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InspectorTabBar-Info.plist"; sourceTree = "<group>"; };
 		D460AE4214D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D460AE4414D6896E001B8775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */ = {isa = PBXFileReference; path = "InspectorTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InspectorTabBar-Prefix.pch"; sourceTree = "<group>"; };
 		D460AE4814D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D460AE4A14D6896E001B8775 /* SMAppDelegate.h */ = {isa = PBXFileReference; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		D460AE4A14D6896E001B8775 /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
 		D460AE4B14D6896E001B8775 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
 		D460AE4E14D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D460AE5514D68A49001B8775 /* SMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBar.h; sourceTree = "<group>"; };
+		D460AE5614D68A49001B8775 /* SMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBar.m; sourceTree = "<group>"; };
+		D4EA424914DC0B4F00FE05D9 /* SMTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarItem.h; sourceTree = "<group>"; };
+		D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarItem.m; sourceTree = "<group>"; };
+		D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMKeyValueObserving.h"; sourceTree = "<group>"; };
+		D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMKeyValueObserving.m"; sourceTree = "<group>"; };
+		D4EA425314DC200700FE05D9 /* Image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image5.png; sourceTree = "<group>"; };
+		D4EA425514DC201300FE05D9 /* Image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image1.png; sourceTree = "<group>"; };
+		D4EA425714DC202300FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
+		D4EA425914DC202D00FE05D9 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
+		D4EA425B14DC203B00FE05D9 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				D460AE3E14D6896E001B8775 /* InspectorTabBar */,
+				D4EA425014DC1FC300FE05D9 /* Images */,
 				D460AE3714D6896E001B8775 /* Frameworks */,
 				D460AE3514D6896E001B8775 /* Products */,
 			);
@@ -82,6 +102,12 @@
 		D460AE3E14D6896E001B8775 /* InspectorTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				D4EA424914DC0B4F00FE05D9 /* SMTabBarItem.h */,
+				D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */,
+				D460AE5514D68A49001B8775 /* SMTabBar.h */,
+				D460AE5614D68A49001B8775 /* SMTabBar.m */,
+				D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */,
+				D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */,
 				D460AE4A14D6896E001B8775 /* SMAppDelegate.h */,
 				D460AE4B14D6896E001B8775 /* SMAppDelegate.m */,
 				D460AE4D14D6896E001B8775 /* MainMenu.xib */,
@@ -100,6 +126,19 @@
 				D460AE4714D6896E001B8775 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4EA425014DC1FC300FE05D9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D4EA425514DC201300FE05D9 /* Image1.png */,
+				D4EA425714DC202300FE05D9 /* Image2.png */,
+				D4EA425914DC202D00FE05D9 /* Image3.png */,
+				D4EA425B14DC203B00FE05D9 /* Image4.png */,
+				D4EA425314DC200700FE05D9 /* Image5.png */,
+			);
+			name = Images;
+			path = InspectorTabBar/Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +195,11 @@
 				D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */,
 				D460AE4914D6896E001B8775 /* Credits.rtf in Resources */,
 				D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */,
+				D4EA425414DC200700FE05D9 /* Image5.png in Resources */,
+				D4EA425614DC201300FE05D9 /* Image1.png in Resources */,
+				D4EA425814DC202400FE05D9 /* Image2.png in Resources */,
+				D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */,
+				D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +212,9 @@
 			files = (
 				D460AE4514D6896E001B8775 /* main.m in Sources */,
 				D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */,
+				D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */,
+				D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */,
+				D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +334,7 @@
 				D460AE5414D6896E001B8775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
