@@ -18,10 +18,10 @@
 		D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */; };
 		D4EA425414DC200700FE05D9 /* Image5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425314DC200700FE05D9 /* Image5.png */; };
 		D4EA425614DC201300FE05D9 /* Image1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425514DC201300FE05D9 /* Image1.png */; };
-		D4EA425814DC202400FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425714DC202300FE05D9 /* Image2.png */; };
 		D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425914DC202D00FE05D9 /* Image3.png */; };
 		D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425B14DC203B00FE05D9 /* Image4.png */; };
 		D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */; };
+		D4EA426514DD205A00FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA426414DD205A00FE05D9 /* Image2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,11 +46,11 @@
 		D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMKeyValueObserving.m"; sourceTree = "<group>"; };
 		D4EA425314DC200700FE05D9 /* Image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image5.png; sourceTree = "<group>"; };
 		D4EA425514DC201300FE05D9 /* Image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image1.png; sourceTree = "<group>"; };
-		D4EA425714DC202300FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
 		D4EA425914DC202D00FE05D9 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		D4EA425B14DC203B00FE05D9 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
 		D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarButtonCell.h; sourceTree = "<group>"; };
 		D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarButtonCell.m; sourceTree = "<group>"; };
+		D4EA426414DD205A00FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D4EA425514DC201300FE05D9 /* Image1.png */,
-				D4EA425714DC202300FE05D9 /* Image2.png */,
+				D4EA426414DD205A00FE05D9 /* Image2.png */,
 				D4EA425914DC202D00FE05D9 /* Image3.png */,
 				D4EA425B14DC203B00FE05D9 /* Image4.png */,
 				D4EA425314DC200700FE05D9 /* Image5.png */,
@@ -202,9 +202,9 @@
 				D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */,
 				D4EA425414DC200700FE05D9 /* Image5.png in Resources */,
 				D4EA425614DC201300FE05D9 /* Image1.png in Resources */,
-				D4EA425814DC202400FE05D9 /* Image2.png in Resources */,
 				D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */,
 				D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */,
+				D4EA426514DD205A00FE05D9 /* Image2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
