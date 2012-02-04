@@ -28,6 +28,8 @@
     [super dealloc];
 }
 
+#pragma mark - Application delegate
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     NSMutableArray *newItems = [NSMutableArray arrayWithCapacity:5];
@@ -66,6 +68,12 @@
     
     self.label.stringValue = [NSString stringWithFormat:@"Selected tab item: %i",  self.tabBar.selectedItem.tag + 1];
 }
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+	return YES;
+}
+
+#pragma mark - Tab bar delegate
 
 - (void)tabBar:(SMTabBar *)tabBar didSelectItem:(SMTabBarItem *)item {
     self.label.stringValue = [NSString stringWithFormat:@"Selected tab item: %i", item.tag + 1];

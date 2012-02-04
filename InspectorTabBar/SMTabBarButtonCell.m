@@ -11,11 +11,12 @@
 @implementation SMTabBarButtonCell
 
 - (void)drawBezelWithFrame:(NSRect)frame inView:(NSView *)controlView {
-    [[NSGraphicsContext currentContext] saveGraphicsState];
+    
+    // Draw background only if the button is selected
     if (self.state == NSOnState) {
-//        [[NSColor greenColor] setFill];
-//        NSRectFill(frame);
+        [[NSGraphicsContext currentContext] saveGraphicsState];
         
+        // light vertical gradient
         NSColor *color1 = [NSColor colorWithCalibratedWhite:0.7 alpha:0.0];
         NSColor *color2 = [NSColor colorWithCalibratedWhite:0.7 alpha:5.0];
         CGFloat loactions[] = {0.0f, 0.5f, 1.0f};
@@ -23,13 +24,14 @@
         [gradient drawInRect:frame angle:-90.0f];
         
         
+        // shadow on the left border
         NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
         shadow.shadowOffset = NSMakeSize(1.0f, 0.0f);
         shadow.shadowBlurRadius = 2.0f;
         shadow.shadowColor = [NSColor darkGrayColor];
         [shadow set];
         
-        
+        // not visible color
         [[NSColor redColor] set];
         
         CGFloat radius = 50.0;
@@ -44,6 +46,7 @@
         [path closePath];
         [path fill];
         
+        // shadow of the right border
         shadow.shadowOffset = NSMakeSize(-1.0f, 0.0f);
         [shadow set];
         
@@ -56,9 +59,9 @@
                                        endAngle:270.0f];
         [path closePath];
         [path fill];
+        
+        [[NSGraphicsContext currentContext] restoreGraphicsState];
     }
-    [[NSGraphicsContext currentContext] restoreGraphicsState];
 }
-
 
 @end
