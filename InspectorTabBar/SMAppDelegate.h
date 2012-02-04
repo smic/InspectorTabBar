@@ -15,5 +15,6 @@
 
 @property (nonatomic, assign) IBOutlet NSWindow *window;
 @property (nonatomic, retain) IBOutlet SMTabBar *tabBar;
+@property (nonatomic, retain) IBOutlet NSTextField *label;
 
 @end

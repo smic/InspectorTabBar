@@ -19,9 +19,11 @@
 
 @synthesize window = _window;
 @synthesize tabBar = _tabBar;
+@synthesize label = _label;
 
 - (void)dealloc {
     self.tabBar = nil;
+    self.label = nil;
     
     [super dealloc];
 }
@@ -61,10 +63,12 @@
     }
     self.tabBar.items = newItems;
     self.tabBar.delegate = self;
+    
+    self.label.stringValue = [NSString stringWithFormat:@"Selected tab item: %i",  self.tabBar.selectedItem.tag + 1];
 }
 
 - (void)tabBar:(SMTabBar *)tabBar didSelectItem:(SMTabBarItem *)item {
-    NSLog(@"Select tab item: %@", item);
+    self.label.stringValue = [NSString stringWithFormat:@"Selected tab item: %i", item.tag + 1];
 }
 
 @end
