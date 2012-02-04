@@ -161,6 +161,7 @@ static char SMTabBarObservationContext;
         
         // add new buttons
         NSMutableArray *newBarButtons = [NSMutableArray arrayWithCapacity:[self.items count]];
+        NSUInteger selectedItemIndex = [self.items indexOfObject:self.selectedItem];
         NSUInteger itemIndex = 0;
         for (SMTabBarItem *item in self.items) {
             NSButton *button = [[[NSButton alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, SMTabBarButtonWidth, NSHeight(self.bounds))] autorelease];
@@ -175,6 +176,7 @@ static char SMTabBarObservationContext;
             
             button.image = item.image;
             button.enabled = item.enabled;
+            button.state = itemIndex == selectedItemIndex ? NSOnState : NSOffState;
             button.tag = itemIndex;
             button.action = @selector(selectBarButton:);
             button.target = self;            
@@ -194,6 +196,12 @@ static char SMTabBarObservationContext;
 //        [self addObserverToItems:self.items];
         
         [self adjustSubviews];
+        
+        NSLog(@"items=%@ selectedItem=%@", self.items, self.selectedItem);
+        if (![self.items containsObject:self.selectedItem]) {
+            self.selectedItem = [self.items count] > 0 ? [self.items objectAtIndex:0] : nil;
+        }
+        
 //    } else if ([keyPath isEqualToString:@"image"]) {
     } else if ([keyPath isEqualToString:@"selectedItem"]) {
         NSUInteger selectedItemIndex = [self.items indexOfObject:self.selectedItem];
