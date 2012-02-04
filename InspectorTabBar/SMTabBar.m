@@ -109,7 +109,7 @@ static char SMTabBarObservationContext;
     [gradient drawInRect:self.bounds angle:90.0];
 
     
-    NSColor *color3 = [NSColor colorWithCalibratedRed:0.333 green:0.333 blue:0.333 alpha:1.];
+    NSColor *color3 = [NSColor colorWithCalibratedWhite:0.3f alpha:1.0f];
     [color3 setStroke];
     //NSFrameRect(self.bounds);
     [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds), NSMaxY(self.bounds)) 

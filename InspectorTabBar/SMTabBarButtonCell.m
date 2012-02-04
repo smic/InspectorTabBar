@@ -16,6 +16,12 @@
 //        [[NSColor greenColor] setFill];
 //        NSRectFill(frame);
         
+        NSColor *color1 = [NSColor colorWithCalibratedWhite:0.7 alpha:0.0];
+        NSColor *color2 = [NSColor colorWithCalibratedWhite:0.7 alpha:5.0];
+        CGFloat loactions[] = {0.0f, 0.5f, 1.0f};
+        NSGradient *gradient = [[NSGradient alloc] initWithColors:[NSArray arrayWithObjects:color1, color2, color1, nil] atLocations:loactions colorSpace:[NSColorSpace genericGrayColorSpace]];
+        [gradient drawInRect:frame angle:-90.0f];
+        
         
         NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
         shadow.shadowOffset = NSMakeSize(1.0f, 0.0f);
