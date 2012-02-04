@@ -28,6 +28,7 @@ static char SMTabBarObservationContext;
 @implementation SMTabBar
 
 @synthesize items = _items;
+@synthesize selectedItem = _selectedItem;
 @synthesize delegate = _delegate;
 
 @synthesize barButtons = _barButtons;
@@ -41,6 +42,7 @@ static char SMTabBarObservationContext;
         
         // add observer for properties
         [self addObserver:self forKeyPath:@"items" options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:&SMTabBarObservationContext];
+        [self addObserver:self forKeyPath:@"selectedItem" options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld) context:&SMTabBarObservationContext];
     }
     return self;
 }
@@ -48,6 +50,7 @@ static char SMTabBarObservationContext;
 - (void)dealloc {
     // remove observer for properties
     [self removeObserver:self forKeyPath:@"items" context:&SMTabBarObservationContext];
+    [self removeObserver:self forKeyPath:@"selectedItem" context:&SMTabBarObservationContext];
     
 //    [self removeObserversFromItems:self.items];
     
@@ -69,8 +72,8 @@ static char SMTabBarObservationContext;
 
 - (void)selectBarButton:(id)sender {
     NSUInteger itemIndex = [sender tag];
-    SMTabBarItem *item = [self.items objectAtIndex:itemIndex];
-    [self.delegate tabBar:self didSelectItem:item];
+    self.selectedItem = [self.items objectAtIndex:itemIndex];
+    [self.delegate tabBar:self didSelectItem:self.selectedItem];
 }
 
 #pragma mark - Layout subviews
@@ -133,6 +136,7 @@ static char SMTabBarObservationContext;
 //}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    NSLog(@"keyPath=%@ change=%@", keyPath, change);
     if (context != &SMTabBarObservationContext) {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
         return;
@@ -181,6 +185,16 @@ static char SMTabBarObservationContext;
         
         [self adjustSubviews];
 //    } else if ([keyPath isEqualToString:@"image"]) {
+    } else if ([keyPath isEqualToString:@"selectedItem"]) {
+        NSUInteger selectedItemIndex = [self.items indexOfObject:self.selectedItem];
+        if (selectedItemIndex != NSNotFound) {
+            NSUInteger buttonIndex = 0;
+            for (NSButton *button in self.barButtons) {
+                button.state = buttonIndex == selectedItemIndex ? NSOnState : NSOffState;
+                NSLog(@"index=%lu state=%ld", buttonIndex, button.state);
+                buttonIndex++;
+            }
+        }
     }
 }
 

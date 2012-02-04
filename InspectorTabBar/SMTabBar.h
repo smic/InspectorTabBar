@@ -15,6 +15,7 @@
 @interface SMTabBar : NSView
 
 @property (nonatomic, retain) NSArray *items;
+@property (nonatomic, assign) SMTabBarItem *selectedItem;
 @property (nonatomic, assign) id<SMTabBarDelegate> delegate;
 
 @end
