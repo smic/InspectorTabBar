@@ -8,6 +8,7 @@
 
 #import "SMTabBar.h"
 #import "SMTabBarItem.h"
+#import "SMTabBarButtonCell.h"
 #import "NSDictionary+SMKeyValueObserving.h"
 
 
@@ -163,6 +164,15 @@ static char SMTabBarObservationContext;
         NSUInteger itemIndex = 0;
         for (SMTabBarItem *item in self.items) {
             NSButton *button = [[[NSButton alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, SMTabBarButtonWidth, NSHeight(self.bounds))] autorelease];
+            
+            
+            //            NSButtonCell *cell = button.cell;
+            NSButtonCell *cell = [[[SMTabBarButtonCell alloc] init] autorelease];
+            cell.bezelStyle = NSTexturedRoundedBezelStyle;
+            button.cell = cell;
+
+            
+            
             button.image = item.image;
             button.enabled = item.enabled;
             button.tag = itemIndex;

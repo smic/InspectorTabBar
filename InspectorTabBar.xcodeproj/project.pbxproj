@@ -21,6 +21,7 @@
 		D4EA425814DC202400FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425714DC202300FE05D9 /* Image2.png */; };
 		D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425914DC202D00FE05D9 /* Image3.png */; };
 		D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425B14DC203B00FE05D9 /* Image4.png */; };
+		D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		D4EA425714DC202300FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
 		D4EA425914DC202D00FE05D9 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
 		D4EA425B14DC203B00FE05D9 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
+		D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarButtonCell.h; sourceTree = "<group>"; };
+		D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarButtonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */,
 				D460AE5514D68A49001B8775 /* SMTabBar.h */,
 				D460AE5614D68A49001B8775 /* SMTabBar.m */,
+				D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */,
+				D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */,
 				D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */,
 				D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */,
 				D460AE4A14D6896E001B8775 /* SMAppDelegate.h */,
@@ -215,6 +220,7 @@
 				D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */,
 				D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */,
 				D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */,
+				D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
