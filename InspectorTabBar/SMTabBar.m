@@ -69,6 +69,10 @@ static char SMTabBarObservationContext;
 
 - (void)selectBarButton:(id)sender {
     // select a bar button
+    
+    // HACK: set ON state again to prevent the toggle of the state by clicking twice
+    [sender setState:NSOnState];
+    
     NSUInteger itemIndex = [sender tag];
     self.selectedItem = [self.items objectAtIndex:itemIndex];
     [self.delegate tabBar:self didSelectItem:self.selectedItem];
@@ -180,12 +184,10 @@ static char SMTabBarObservationContext;
     } else if ([keyPath isEqualToString:@"selectedItem"]) {
         // update button states if the corresponding item is selected
         NSUInteger selectedItemIndex = [self.items indexOfObject:self.selectedItem];
-        if (selectedItemIndex != NSNotFound) {
-            NSUInteger buttonIndex = 0;
-            for (NSButton *button in self.barButtons) {
-                button.state = buttonIndex == selectedItemIndex ? NSOnState : NSOffState;
-                buttonIndex++;
-            }
+        NSUInteger buttonIndex = 0;
+        for (NSButton *button in self.barButtons) {
+            button.state = buttonIndex == selectedItemIndex ? NSOnState : NSOffState;
+            buttonIndex++;
         }
     }
 }
