@@ -12,6 +12,9 @@
 
 @property (nonatomic, assign) BOOL enabled;
 @property (nonatomic, retain) NSImage *image;
+@property (nonatomic, copy) NSString *toolTip;
+@property (nonatomic, copy) NSString *keyEquivalent;
+@property (nonatomic, assign) NSUInteger keyEquivalentModifierMask;
 @property (nonatomic, assign) NSInteger tag;
 
 - (id)initWithImage:(NSImage *)image tag:(NSInteger)tag;

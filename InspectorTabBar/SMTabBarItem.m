@@ -12,6 +12,9 @@
 
 @synthesize enabled = _enabled;
 @synthesize image = _image;
+@synthesize toolTip = _toolTip;
+@synthesize keyEquivalent = _keyEquivalent;
+@synthesize keyEquivalentModifierMask = _keyEquivalentModifierMask;
 @synthesize tag = _tag;
 
 - (id)initWithImage:(NSImage *)image tag:(NSInteger)tag {
@@ -26,6 +29,8 @@
 
 - (void)dealloc {
     self.image = nil;
+    self.toolTip = nil;
+    self.keyEquivalent = nil;
     
     [super dealloc];
 }

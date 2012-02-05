@@ -55,6 +55,9 @@ static char SMTabBarObservationContext;
     for (NSButton *button in self.barButtons) {
         [button unbind:@"image"];
         [button unbind:@"enabled"];
+        [button unbind:@"toolTip"];
+        [button unbind:@"keyEquivalent"];
+        [button unbind:@"keyEquivalentModifierMask"];
     }
     
     self.items = nil;
@@ -140,6 +143,9 @@ static char SMTabBarObservationContext;
             
             [button unbind:@"image"];
             [button unbind:@"enabled"];
+            [button unbind:@"toolTip"];
+            [button unbind:@"keyEquivalent"];
+            [button unbind:@"keyEquivalentModifierMask"];
         }
         self.barButtons = nil;
         
@@ -167,6 +173,9 @@ static char SMTabBarObservationContext;
             // bind button properties to the item properties
             [button bind:@"image" toObject:item withKeyPath:@"image" options:nil];
             [button bind:@"enabled" toObject:item withKeyPath:@"enabled" options:nil];
+            [button bind:@"toolTip" toObject:item withKeyPath:@"toolTip" options:nil];
+            [button bind:@"keyEquivalent" toObject:item withKeyPath:@"keyEquivalent" options:nil];
+            [button bind:@"keyEquivalentModifierMask" toObject:item withKeyPath:@"keyEquivalentModifierMask" options:nil];
             
             [newBarButtons addObject:button];
 
