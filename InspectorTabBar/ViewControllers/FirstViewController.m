@@ -26,7 +26,7 @@
     NSImage *image = [NSImage imageNamed:@"Image1.png"];
     image.template = YES;
     SMTabBarItem *item = [[SMTabBarItem alloc] initWithImage:image tag:0];
-    item.toolTip = @"Show tab 1";
+    item.toolTip = @"Show first plane";
     item.keyEquivalent = @"1";
     item.keyEquivalentModifierMask = NSCommandKeyMask;
     return item;
