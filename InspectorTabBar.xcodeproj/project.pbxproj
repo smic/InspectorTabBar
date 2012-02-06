@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D459EA3B14DED093005C10FA /* SMTabBarContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D459EA3A14DED093005C10FA /* SMTabBarContainerView.m */; };
+		D459EA4014DFD8CF005C10FA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D459EA3E14DFD8CF005C10FA /* FirstViewController.m */; };
+		D459EA4114DFD8CF005C10FA /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D459EA3F14DFD8CF005C10FA /* FirstViewController.xib */; };
+		D459EA4514DFD8EB005C10FA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D459EA4314DFD8EB005C10FA /* SecondViewController.m */; };
+		D459EA4614DFD8EB005C10FA /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D459EA4414DFD8EB005C10FA /* SecondViewController.xib */; };
 		D460AE3914D6896E001B8775 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D460AE3814D6896E001B8775 /* Cocoa.framework */; };
 		D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4114D6896E001B8775 /* InfoPlist.strings */; };
 		D460AE4514D6896E001B8775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4414D6896E001B8775 /* main.m */; };
@@ -16,15 +21,20 @@
 		D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE5614D68A49001B8775 /* SMTabBar.m */; };
 		D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */; };
 		D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */; };
-		D4EA425414DC200700FE05D9 /* Image5.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425314DC200700FE05D9 /* Image5.png */; };
 		D4EA425614DC201300FE05D9 /* Image1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425514DC201300FE05D9 /* Image1.png */; };
-		D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425914DC202D00FE05D9 /* Image3.png */; };
-		D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425B14DC203B00FE05D9 /* Image4.png */; };
 		D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */; };
 		D4EA426514DD205A00FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA426414DD205A00FE05D9 /* Image2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D459EA3914DED093005C10FA /* SMTabBarContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarContainerView.h; sourceTree = "<group>"; };
+		D459EA3A14DED093005C10FA /* SMTabBarContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarContainerView.m; sourceTree = "<group>"; };
+		D459EA3D14DFD8CF005C10FA /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D459EA3E14DFD8CF005C10FA /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D459EA3F14DFD8CF005C10FA /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		D459EA4214DFD8EB005C10FA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D459EA4314DFD8EB005C10FA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D459EA4414DFD8EB005C10FA /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		D460AE3414D6896E001B8775 /* InspectorTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460AE3814D6896E001B8775 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D460AE3B14D6896E001B8775 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,10 +54,7 @@
 		D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarItem.m; sourceTree = "<group>"; };
 		D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMKeyValueObserving.h"; sourceTree = "<group>"; };
 		D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMKeyValueObserving.m"; sourceTree = "<group>"; };
-		D4EA425314DC200700FE05D9 /* Image5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image5.png; sourceTree = "<group>"; };
 		D4EA425514DC201300FE05D9 /* Image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image1.png; sourceTree = "<group>"; };
-		D4EA425914DC202D00FE05D9 /* Image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image3.png; sourceTree = "<group>"; };
-		D4EA425B14DC203B00FE05D9 /* Image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image4.png; sourceTree = "<group>"; };
 		D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarButtonCell.h; sourceTree = "<group>"; };
 		D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarButtonCell.m; sourceTree = "<group>"; };
 		D4EA426414DD205A00FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
@@ -65,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D459EA3C14DFD88A005C10FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D459EA3D14DFD8CF005C10FA /* FirstViewController.h */,
+				D459EA3E14DFD8CF005C10FA /* FirstViewController.m */,
+				D459EA3F14DFD8CF005C10FA /* FirstViewController.xib */,
+				D459EA4214DFD8EB005C10FA /* SecondViewController.h */,
+				D459EA4314DFD8EB005C10FA /* SecondViewController.m */,
+				D459EA4414DFD8EB005C10FA /* SecondViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D460AE2914D6896E001B8775 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +125,15 @@
 		D460AE3E14D6896E001B8775 /* InspectorTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				D459EA3C14DFD88A005C10FA /* ViewControllers */,
 				D4EA424914DC0B4F00FE05D9 /* SMTabBarItem.h */,
 				D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */,
 				D460AE5514D68A49001B8775 /* SMTabBar.h */,
 				D460AE5614D68A49001B8775 /* SMTabBar.m */,
 				D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */,
 				D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */,
+				D459EA3914DED093005C10FA /* SMTabBarContainerView.h */,
+				D459EA3A14DED093005C10FA /* SMTabBarContainerView.m */,
 				D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */,
 				D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */,
 				D460AE4A14D6896E001B8775 /* SMAppDelegate.h */,
@@ -138,9 +161,6 @@
 			children = (
 				D4EA425514DC201300FE05D9 /* Image1.png */,
 				D4EA426414DD205A00FE05D9 /* Image2.png */,
-				D4EA425914DC202D00FE05D9 /* Image3.png */,
-				D4EA425B14DC203B00FE05D9 /* Image4.png */,
-				D4EA425314DC200700FE05D9 /* Image5.png */,
 			);
 			name = Images;
 			path = InspectorTabBar/Images;
@@ -200,11 +220,10 @@
 				D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */,
 				D460AE4914D6896E001B8775 /* Credits.rtf in Resources */,
 				D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */,
-				D4EA425414DC200700FE05D9 /* Image5.png in Resources */,
 				D4EA425614DC201300FE05D9 /* Image1.png in Resources */,
-				D4EA425A14DC202D00FE05D9 /* Image3.png in Resources */,
-				D4EA425C14DC203B00FE05D9 /* Image4.png in Resources */,
 				D4EA426514DD205A00FE05D9 /* Image2.png in Resources */,
+				D459EA4114DFD8CF005C10FA /* FirstViewController.xib in Resources */,
+				D459EA4614DFD8EB005C10FA /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +240,9 @@
 				D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */,
 				D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */,
 				D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */,
+				D459EA3B14DED093005C10FA /* SMTabBarContainerView.m in Sources */,
+				D459EA4014DFD8CF005C10FA /* FirstViewController.m in Sources */,
+				D459EA4514DFD8EB005C10FA /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

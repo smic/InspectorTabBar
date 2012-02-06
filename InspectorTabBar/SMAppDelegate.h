@@ -9,12 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 
-@class SMTabBar;
+@class SMTabBarContainerView;
 
 @interface SMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (nonatomic, assign) IBOutlet NSWindow *window;
-@property (nonatomic, retain) IBOutlet SMTabBar *tabBar;
-@property (nonatomic, retain) IBOutlet NSTextField *label;
+@property (nonatomic, retain) IBOutlet SMTabBarContainerView *tabBarContainerView;
+@property (nonatomic, retain) IBOutlet NSViewController *firstViewController;
+@property (nonatomic, retain) IBOutlet NSViewController *secondViewControllers;
 
 @end
