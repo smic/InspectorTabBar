@@ -10,6 +10,14 @@
 
 @implementation SMTabBarButtonCell
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.bezelStyle = NSTexturedRoundedBezelStyle;
+    }
+    return self;
+}
+
 - (void)drawBezelWithFrame:(NSRect)frame inView:(NSView *)controlView {
     
     // Draw background only if the button is selected

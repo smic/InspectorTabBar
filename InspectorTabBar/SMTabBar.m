@@ -157,9 +157,7 @@ static char SMTabBarObservationContext;
             NSButton *button = [[[NSButton alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, SMTabBarButtonWidth, NSHeight(self.bounds))] autorelease];
             
             // add special button cell for the selected state
-            NSButtonCell *cell = [[[SMTabBarButtonCell alloc] init] autorelease];
-            cell.bezelStyle = NSTexturedRoundedBezelStyle;
-            button.cell = cell;
+            button.cell = [[[SMTabBarButtonCell alloc] init] autorelease];
             
             // set properties of the button
             button.image = item.image;
