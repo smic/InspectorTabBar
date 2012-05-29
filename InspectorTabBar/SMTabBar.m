@@ -18,7 +18,7 @@ static char SMTabBarObservationContext;
 
 @interface SMTabBar ()
 
-@property (nonatomic, retain) NSArray *barButtons;
+@property (nonatomic, strong) NSArray *barButtons;
 
 - (void)adjustSubviews;
 
@@ -59,13 +59,6 @@ static char SMTabBarObservationContext;
         [button unbind:@"keyEquivalent"];
         [button unbind:@"keyEquivalentModifierMask"];
     }
-    
-    self.items = nil;
-    self.delegate = nil;
-    
-    self.barButtons = nil;
-
-    [super dealloc];
 }
 
 #pragma mark - Actions
@@ -73,12 +66,15 @@ static char SMTabBarObservationContext;
 - (void)selectBarButton:(id)sender {
     // select a bar button
     
-    // HACK: set ON state again to prevent the toggle of the state by clicking twice
-    [sender setState:NSOnState];
-    
     NSUInteger itemIndex = [sender tag];
-    self.selectedItem = [self.items objectAtIndex:itemIndex];
-    [self.delegate tabBar:self didSelectItem:self.selectedItem];
+    SMTabBarItem *tabBarItem = [self.items objectAtIndex:itemIndex];
+    if ([self.delegate respondsToSelector:@selector(tabBar:willSelectItem:)]) {
+        [self.delegate tabBar:self willSelectItem:tabBarItem];
+    }
+    self.selectedItem = tabBarItem;
+    if ([self.delegate respondsToSelector:@selector(tabBar:didSelectItem:)]) {
+        [self.delegate tabBar:self didSelectItem:tabBarItem];
+    }
 }
 
 #pragma mark - Layout subviews
@@ -97,31 +93,6 @@ static char SMTabBarObservationContext;
         button.frame = NSMakeRect(offset, NSMinY(self.bounds), SMTabBarButtonWidth, NSHeight(self.bounds));
         offset += SMTabBarButtonWidth;
     }
-}
-
-#pragma mark - Drawing
-
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-    
-    // Draw bar gradient
-    NSColor *color1 = [NSColor colorWithCalibratedRed:0.851 green:0.851 blue:0.851 alpha:1.];
-    NSColor *color2 = [NSColor colorWithCalibratedRed:0.700 green:0.700 blue:0.700 alpha:1.];
-    NSGradient *gradient = [[[NSGradient alloc] initWithStartingColor:color1 
-                                                          endingColor:color2] autorelease];
-    [gradient drawInRect:self.bounds angle:90.0];
-
-    // Draw drak gray bottom border
-    NSColor *color3 = [NSColor colorWithCalibratedWhite:0.3f alpha:1.0f];
-    [color3 setStroke];
-    [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds), NSMaxY(self.bounds)) 
-                              toPoint:NSMakePoint(NSMaxX(self.bounds), NSMaxY(self.bounds))];
-}
-
-- (BOOL)isFlipped {
-    return YES;
 }
 
 #pragma mark - KVO
@@ -154,18 +125,19 @@ static char SMTabBarObservationContext;
         NSUInteger selectedItemIndex = [self.items indexOfObject:self.selectedItem];
         NSUInteger itemIndex = 0;
         for (SMTabBarItem *item in self.items) {
-            NSButton *button = [[[NSButton alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, SMTabBarButtonWidth, NSHeight(self.bounds))] autorelease];
+            NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(0.0f, 0.0f, SMTabBarButtonWidth, NSHeight(self.bounds))];
             
             // add special button cell for the selected state
-            button.cell = [[[SMTabBarButtonCell alloc] init] autorelease];
+            button.cell = [[SMTabBarButtonCell alloc] init];
             
             // set properties of the button
             button.image = item.image;
-            button.enabled = item.enabled;
+            [button setEnabled:item.enabled];
             button.state = itemIndex == selectedItemIndex ? NSOnState : NSOffState;
             button.tag = itemIndex;
             button.action = @selector(selectBarButton:);
             button.target = self;            
+            [button sendActionOn:NSLeftMouseDownMask];
             [self addSubview:button];
             
             // bind button properties to the item properties

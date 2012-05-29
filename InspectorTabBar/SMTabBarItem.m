@@ -27,14 +27,6 @@
     return self;
 }
 
-- (void)dealloc {
-    self.image = nil;
-    self.toolTip = nil;
-    self.keyEquivalent = nil;
-    
-    [super dealloc];
-}
-
 - (NSString *)description {
     return [NSString stringWithFormat:@"SMTabBarItem{tag=%i}", self.tag];
 }

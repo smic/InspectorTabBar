@@ -7,22 +7,25 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SMBar.h"
 
 
 @class SMTabBarItem;
 @protocol SMTabBarDelegate;
 
-@interface SMTabBar : NSView
+@interface SMTabBar : SMBar
 
-@property (nonatomic, retain) NSArray *items;
-@property (nonatomic, assign) SMTabBarItem *selectedItem;
-@property (nonatomic, assign) id<SMTabBarDelegate> delegate;
+@property (nonatomic, strong) NSArray *items;
+@property (nonatomic, weak) SMTabBarItem *selectedItem;
+@property (nonatomic, unsafe_unretained) IBOutlet id<SMTabBarDelegate> delegate;
 
 @end
 
 
 @protocol SMTabBarDelegate <NSObject>
 
+@optional
+- (void)tabBar:(SMTabBar *)tabBar willSelectItem:(SMTabBarItem *)item;
 - (void)tabBar:(SMTabBar *)tabBar didSelectItem:(SMTabBarItem *)item;
 
 @end

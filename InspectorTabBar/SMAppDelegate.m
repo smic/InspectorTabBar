@@ -7,34 +7,64 @@
 //
 
 #import "SMAppDelegate.h"
-#import "SMTabBarContainerView.h"
+#import "SMTabBar.h"
+#import "SMTabBarItem.h"
 
 
 @implementation SMAppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarContainerView = _tabBarContainerView;
-@synthesize firstViewController = _firstViewController;
-@synthesize secondViewControllers = _secondViewControllers;
-
-- (void)dealloc {
-    self.tabBarContainerView = nil;
-    self.firstViewController = nil;
-    self.secondViewControllers = nil;
-    
-    [super dealloc];
-}
+@synthesize tabBar = _tabBar;
+@synthesize tabView = _tabView;
 
 #pragma mark - Application delegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application    
-    self.tabBarContainerView.viewControllers = [NSArray arrayWithObjects:self.firstViewController,
-                                                self.secondViewControllers, nil];
+    
+    NSMutableArray *tabBarItems = [NSMutableArray arrayWithCapacity:2];
+    {
+        NSImage *image = [NSImage imageNamed:@"Image1.png"];
+        [image setTemplate:YES];
+        SMTabBarItem *item = [[SMTabBarItem alloc] initWithImage:image tag:0];
+        item.toolTip = NSLocalizedString(@"Tab 1", nil);
+        item.keyEquivalent = @"1";
+        item.keyEquivalentModifierMask = NSCommandKeyMask;
+        [tabBarItems addObject:item];
+    }
+    {
+        NSImage *image = [NSImage imageNamed:@"Image2.png"];
+        [image setTemplate:YES];
+        SMTabBarItem *item = [[SMTabBarItem alloc] initWithImage:image tag:1];
+        item.toolTip = NSLocalizedString(@"Tab 2", nil);
+        item.keyEquivalent = @"2";
+        item.keyEquivalentModifierMask = NSCommandKeyMask;
+        [tabBarItems addObject:item];
+    }
+    self.tabBar.items = tabBarItems;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
 	return YES;
+}
+
+
+#pragma mark - Tab bar delegate
+
+- (void)tabBar:(SMTabBar *)tabBar willSelectItem:(SMTabBarItem *)item {
+    // commit edits for changing tabs
+//    switch ([self.tabBar.items indexOfObject:tabBar.selectedItem]) {
+//        case 0:
+//            [self.graphicController commitEditing];
+//            break;
+//            
+//        default:
+//            break;
+//    }
+}
+
+- (void)tabBar:(SMTabBar *)tabBar didSelectItem:(SMTabBarItem *)item {
+    [self.tabView selectTabViewItemAtIndex:[self.tabBar.items indexOfObject:item]];
 }
 
 @end
