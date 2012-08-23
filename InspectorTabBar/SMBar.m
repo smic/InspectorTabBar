@@ -64,11 +64,11 @@
         static NSGradient *gradient = nil;
         static NSColor *borderColor = nil;
         if (!gradient) {
-            NSColor *color1 = [NSColor colorWithCalibratedRed:0.851 green:0.851 blue:0.851 alpha:1.];
-            NSColor *color2 = [NSColor colorWithCalibratedRed:0.700 green:0.700 blue:0.700 alpha:1.];
+            NSColor *color1 = [NSColor colorWithCalibratedWhite:0.851 alpha:1.];
+            NSColor *color2 = [NSColor colorWithCalibratedWhite:0.700 alpha:1.];
             gradient = [[NSGradient alloc] initWithStartingColor:color1
                                                      endingColor:color2];
-            borderColor = [NSColor colorWithCalibratedRed:0.416 green:0.416 blue:0.416 alpha:1];
+            borderColor = [NSColor colorWithCalibratedWhite:0.416 alpha:1];
         }
         
         // Draw bar gradient
@@ -79,18 +79,17 @@
         
         // Draw drak gray bottom border
         [borderColor setStroke];
-        [NSBezierPath setDefaultLineWidth:0.0f];
-        [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds) + 0.5f, NSMaxY(self.bounds) - 0.5f)
-                                  toPoint:NSMakePoint(NSMaxX(self.bounds) - 0.5f, NSMaxY(self.bounds) - 0.5f)];
+        [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds), NSMaxY(self.bounds) - 0.5f)
+                                  toPoint:NSMakePoint(NSMaxX(self.bounds), NSMaxY(self.bounds) - 0.5f)];
     } else {
         static NSGradient *gradient = nil;
         static NSColor *borderColor = nil;
         if (!gradient) {
-            NSColor *color1 = [NSColor colorWithCalibratedRed:0.965 green:0.965 blue:0.965 alpha:1];
-            NSColor *color2 = [NSColor colorWithCalibratedRed:0.851 green:0.851 blue:0.851 alpha:1];
+            NSColor *color1 = [NSColor colorWithCalibratedWhite:0.965 alpha:1];
+            NSColor *color2 = [NSColor colorWithCalibratedWhite:0.851 alpha:1];
             gradient = [[NSGradient alloc] initWithStartingColor:color1
                                                      endingColor:color2];
-            borderColor = [NSColor colorWithCalibratedRed:0.651 green:0.651 blue:0.651 alpha:1];
+            borderColor = [NSColor colorWithCalibratedWhite:0.651 alpha:1];
         }
         
         // Draw bar gradient
@@ -102,8 +101,8 @@
         // Draw drak gray bottom border
         [borderColor setStroke];
         [NSBezierPath setDefaultLineWidth:0.0f];
-        [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds) + 0.5f, NSMaxY(self.bounds) - 0.5f)
-                                  toPoint:NSMakePoint(NSMaxX(self.bounds) - 0.5f, NSMaxY(self.bounds) - 0.5f)];
+        [NSBezierPath strokeLineFromPoint:NSMakePoint(NSMinX(self.bounds), NSMaxY(self.bounds) - 0.5f)
+                                  toPoint:NSMakePoint(NSMaxX(self.bounds), NSMaxY(self.bounds) - 0.5f)];
     }
 }
 
