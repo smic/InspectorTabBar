@@ -7,35 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D460AE3914D6896E001B8775 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D460AE3814D6896E001B8775 /* Cocoa.framework */; };
-		D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4114D6896E001B8775 /* InfoPlist.strings */; };
-		D460AE4514D6896E001B8775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4414D6896E001B8775 /* main.m */; };
-		D460AE4914D6896E001B8775 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4714D6896E001B8775 /* Credits.rtf */; };
-		D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE4B14D6896E001B8775 /* SMAppDelegate.m */; };
-		D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D460AE4D14D6896E001B8775 /* MainMenu.xib */; };
-		D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE5614D68A49001B8775 /* SMTabBar.m */; };
-		D4C4A8B215750E6400405F8B /* SMBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C4A8B115750E6400405F8B /* SMBar.m */; };
-		D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */; };
-		D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */; };
-		D4EA425614DC201300FE05D9 /* Image1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA425514DC201300FE05D9 /* Image1.png */; };
-		D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */; };
-		D4EA426514DD205A00FE05D9 /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EA426414DD205A00FE05D9 /* Image2.png */; };
+		D4A0B09216777E1900DE89FD /* SMBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C4A8B115750E6400405F8B /* SMBar.m */; };
+		D4A0B09316777E1900DE89FD /* SMTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */; };
+		D4A0B09416777E1900DE89FD /* SMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D460AE5614D68A49001B8775 /* SMTabBar.m */; };
+		D4A0B09516777E1900DE89FD /* SMTabBarButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */; };
+		D4A0B09616777E1900DE89FD /* NSDictionary+SMKeyValueObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */; };
+		D4EC7D9E16777C7800DACEBA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D460AE3814D6896E001B8775 /* Cocoa.framework */; };
+		D4EC7DA416777C7800DACEBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4EC7DA216777C7800DACEBA /* InfoPlist.strings */; };
+		D4EC7DA616777C7800DACEBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC7DA516777C7800DACEBA /* main.m */; };
+		D4EC7DAA16777C7800DACEBA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4EC7DA816777C7800DACEBA /* Credits.rtf */; };
+		D4EC7DAD16777C7800DACEBA /* SMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EC7DAC16777C7800DACEBA /* SMAppDelegate.m */; };
+		D4EC7DB016777C7800DACEBA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4EC7DAE16777C7800DACEBA /* MainMenu.xib */; };
+		D4EC7DB816777CAF00DACEBA /* Image1.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC7DB616777CAF00DACEBA /* Image1.png */; };
+		D4EC7DB916777CAF00DACEBA /* Image2.png in Resources */ = {isa = PBXBuildFile; fileRef = D4EC7DB716777CAF00DACEBA /* Image2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D460AE3414D6896E001B8775 /* InspectorTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460AE3814D6896E001B8775 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D460AE3B14D6896E001B8775 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D460AE3C14D6896E001B8775 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D460AE3D14D6896E001B8775 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InspectorTabBar-Info.plist"; sourceTree = "<group>"; };
-		D460AE4214D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D460AE4414D6896E001B8775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InspectorTabBar-Prefix.pch"; sourceTree = "<group>"; };
-		D460AE4814D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D460AE4A14D6896E001B8775 /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
-		D460AE4B14D6896E001B8775 /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
-		D460AE4E14D6896E001B8775 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D460AE5514D68A49001B8775 /* SMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBar.h; sourceTree = "<group>"; };
 		D460AE5614D68A49001B8775 /* SMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBar.m; sourceTree = "<group>"; };
 		D4C4A8B015750E6400405F8B /* SMBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBar.h; sourceTree = "<group>"; };
@@ -44,18 +35,27 @@
 		D4EA424A14DC0B4F00FE05D9 /* SMTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarItem.m; sourceTree = "<group>"; };
 		D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SMKeyValueObserving.h"; sourceTree = "<group>"; };
 		D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SMKeyValueObserving.m"; sourceTree = "<group>"; };
-		D4EA425514DC201300FE05D9 /* Image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image1.png; sourceTree = "<group>"; };
 		D4EA426114DCA41F00FE05D9 /* SMTabBarButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTabBarButtonCell.h; sourceTree = "<group>"; };
 		D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTabBarButtonCell.m; sourceTree = "<group>"; };
-		D4EA426414DD205A00FE05D9 /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
+		D4EC7D9C16777C7800DACEBA /* InspectorTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspectorTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EC7DA116777C7800DACEBA /* InspectorTabBarDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InspectorTabBarDemo-Info.plist"; sourceTree = "<group>"; };
+		D4EC7DA316777C7800DACEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4EC7DA516777C7800DACEBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4EC7DA716777C7800DACEBA /* InspectorTabBarDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InspectorTabBarDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D4EC7DA916777C7800DACEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D4EC7DAB16777C7800DACEBA /* SMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMAppDelegate.h; sourceTree = "<group>"; };
+		D4EC7DAC16777C7800DACEBA /* SMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMAppDelegate.m; sourceTree = "<group>"; };
+		D4EC7DAF16777C7800DACEBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D4EC7DB616777CAF00DACEBA /* Image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image1.png; sourceTree = "<group>"; };
+		D4EC7DB716777CAF00DACEBA /* Image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D460AE3114D6896E001B8775 /* Frameworks */ = {
+		D4EC7D9916777C7800DACEBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D460AE3914D6896E001B8775 /* Cocoa.framework in Frameworks */,
+				D4EC7D9E16777C7800DACEBA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				D460AE3E14D6896E001B8775 /* InspectorTabBar */,
-				D4EA425014DC1FC300FE05D9 /* Images */,
+				D4EC7D9F16777C7800DACEBA /* InspectorTabBarDemo */,
 				D460AE3714D6896E001B8775 /* Frameworks */,
 				D460AE3514D6896E001B8775 /* Products */,
 			);
@@ -75,7 +75,7 @@
 		D460AE3514D6896E001B8775 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D460AE3414D6896E001B8775 /* InspectorTabBar.app */,
+				D4EC7D9C16777C7800DACEBA /* InspectorTabBarDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,54 +112,61 @@
 				D4EA426214DCA42000FE05D9 /* SMTabBarButtonCell.m */,
 				D4EA424D14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.h */,
 				D4EA424E14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m */,
-				D460AE4A14D6896E001B8775 /* SMAppDelegate.h */,
-				D460AE4B14D6896E001B8775 /* SMAppDelegate.m */,
-				D460AE4D14D6896E001B8775 /* MainMenu.xib */,
-				D460AE3F14D6896E001B8775 /* Supporting Files */,
 			);
 			path = InspectorTabBar;
 			sourceTree = "<group>";
 		};
-		D460AE3F14D6896E001B8775 /* Supporting Files */ = {
+		D4EC7D9F16777C7800DACEBA /* InspectorTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D460AE4014D6896E001B8775 /* InspectorTabBar-Info.plist */,
-				D460AE4114D6896E001B8775 /* InfoPlist.strings */,
-				D460AE4414D6896E001B8775 /* main.m */,
-				D460AE4614D6896E001B8775 /* InspectorTabBar-Prefix.pch */,
-				D460AE4714D6896E001B8775 /* Credits.rtf */,
+				D4EC7DB516777C9200DACEBA /* Images */,
+				D4EC7DAB16777C7800DACEBA /* SMAppDelegate.h */,
+				D4EC7DAC16777C7800DACEBA /* SMAppDelegate.m */,
+				D4EC7DAE16777C7800DACEBA /* MainMenu.xib */,
+				D4EC7DA016777C7800DACEBA /* Supporting Files */,
+			);
+			path = InspectorTabBarDemo;
+			sourceTree = "<group>";
+		};
+		D4EC7DA016777C7800DACEBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4EC7DA116777C7800DACEBA /* InspectorTabBarDemo-Info.plist */,
+				D4EC7DA216777C7800DACEBA /* InfoPlist.strings */,
+				D4EC7DA516777C7800DACEBA /* main.m */,
+				D4EC7DA716777C7800DACEBA /* InspectorTabBarDemo-Prefix.pch */,
+				D4EC7DA816777C7800DACEBA /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D4EA425014DC1FC300FE05D9 /* Images */ = {
+		D4EC7DB516777C9200DACEBA /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D4EA425514DC201300FE05D9 /* Image1.png */,
-				D4EA426414DD205A00FE05D9 /* Image2.png */,
+				D4EC7DB616777CAF00DACEBA /* Image1.png */,
+				D4EC7DB716777CAF00DACEBA /* Image2.png */,
 			);
-			name = Images;
-			path = InspectorTabBar/Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D460AE3314D6896E001B8775 /* InspectorTabBar */ = {
+		D4EC7D9B16777C7800DACEBA /* InspectorTabBarDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D460AE5214D6896E001B8775 /* Build configuration list for PBXNativeTarget "InspectorTabBar" */;
+			buildConfigurationList = D4EC7DB316777C7800DACEBA /* Build configuration list for PBXNativeTarget "InspectorTabBarDemo" */;
 			buildPhases = (
-				D460AE3014D6896E001B8775 /* Sources */,
-				D460AE3114D6896E001B8775 /* Frameworks */,
-				D460AE3214D6896E001B8775 /* Resources */,
+				D4EC7D9816777C7800DACEBA /* Sources */,
+				D4EC7D9916777C7800DACEBA /* Frameworks */,
+				D4EC7D9A16777C7800DACEBA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = InspectorTabBar;
-			productName = InspectorTabBar;
-			productReference = D460AE3414D6896E001B8775 /* InspectorTabBar.app */;
+			name = InspectorTabBarDemo;
+			productName = InspectorTabBarDemo;
+			productReference = D4EC7D9C16777C7800DACEBA /* InspectorTabBarDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,64 +190,64 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D460AE3314D6896E001B8775 /* InspectorTabBar */,
+				D4EC7D9B16777C7800DACEBA /* InspectorTabBarDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D460AE3214D6896E001B8775 /* Resources */ = {
+		D4EC7D9A16777C7800DACEBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D460AE4314D6896E001B8775 /* InfoPlist.strings in Resources */,
-				D460AE4914D6896E001B8775 /* Credits.rtf in Resources */,
-				D460AE4F14D6896E001B8775 /* MainMenu.xib in Resources */,
-				D4EA425614DC201300FE05D9 /* Image1.png in Resources */,
-				D4EA426514DD205A00FE05D9 /* Image2.png in Resources */,
+				D4EC7DA416777C7800DACEBA /* InfoPlist.strings in Resources */,
+				D4EC7DAA16777C7800DACEBA /* Credits.rtf in Resources */,
+				D4EC7DB016777C7800DACEBA /* MainMenu.xib in Resources */,
+				D4EC7DB816777CAF00DACEBA /* Image1.png in Resources */,
+				D4EC7DB916777CAF00DACEBA /* Image2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D460AE3014D6896E001B8775 /* Sources */ = {
+		D4EC7D9816777C7800DACEBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D460AE4514D6896E001B8775 /* main.m in Sources */,
-				D460AE4C14D6896E001B8775 /* SMAppDelegate.m in Sources */,
-				D460AE5714D68A49001B8775 /* SMTabBar.m in Sources */,
-				D4EA424B14DC0B4F00FE05D9 /* SMTabBarItem.m in Sources */,
-				D4EA424F14DC10A200FE05D9 /* NSDictionary+SMKeyValueObserving.m in Sources */,
-				D4EA426314DCA42000FE05D9 /* SMTabBarButtonCell.m in Sources */,
-				D4C4A8B215750E6400405F8B /* SMBar.m in Sources */,
+				D4EC7DA616777C7800DACEBA /* main.m in Sources */,
+				D4EC7DAD16777C7800DACEBA /* SMAppDelegate.m in Sources */,
+				D4A0B09216777E1900DE89FD /* SMBar.m in Sources */,
+				D4A0B09316777E1900DE89FD /* SMTabBarItem.m in Sources */,
+				D4A0B09416777E1900DE89FD /* SMTabBar.m in Sources */,
+				D4A0B09516777E1900DE89FD /* SMTabBarButtonCell.m in Sources */,
+				D4A0B09616777E1900DE89FD /* NSDictionary+SMKeyValueObserving.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D460AE4114D6896E001B8775 /* InfoPlist.strings */ = {
+		D4EC7DA216777C7800DACEBA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D460AE4214D6896E001B8775 /* en */,
+				D4EC7DA316777C7800DACEBA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D460AE4714D6896E001B8775 /* Credits.rtf */ = {
+		D4EC7DA816777C7800DACEBA /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D460AE4814D6896E001B8775 /* en */,
+				D4EC7DA916777C7800DACEBA /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		D460AE4D14D6896E001B8775 /* MainMenu.xib */ = {
+		D4EC7DAE16777C7800DACEBA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D460AE4E14D6896E001B8775 /* en */,
+				D4EC7DAF16777C7800DACEBA /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -293,25 +300,39 @@
 			};
 			name = Release;
 		};
-		D460AE5314D6896E001B8775 /* Debug */ = {
+		D4EC7DB116777C7800DACEBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InspectorTabBar/InspectorTabBar-Prefix.pch";
-				INFOPLIST_FILE = "InspectorTabBar/InspectorTabBar-Info.plist";
+				GCC_PREFIX_HEADER = "InspectorTabBarDemo/InspectorTabBarDemo-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "InspectorTabBarDemo/InspectorTabBarDemo-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		D460AE5414D6896E001B8775 /* Release */ = {
+		D4EC7DB216777C7800DACEBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "InspectorTabBar/InspectorTabBar-Prefix.pch";
-				INFOPLIST_FILE = "InspectorTabBar/InspectorTabBar-Info.plist";
+				GCC_PREFIX_HEADER = "InspectorTabBarDemo/InspectorTabBarDemo-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "InspectorTabBarDemo/InspectorTabBarDemo-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -329,11 +350,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D460AE5214D6896E001B8775 /* Build configuration list for PBXNativeTarget "InspectorTabBar" */ = {
+		D4EC7DB316777C7800DACEBA /* Build configuration list for PBXNativeTarget "InspectorTabBarDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D460AE5314D6896E001B8775 /* Debug */,
-				D460AE5414D6896E001B8775 /* Release */,
+				D4EC7DB116777C7800DACEBA /* Debug */,
+				D4EC7DB216777C7800DACEBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
