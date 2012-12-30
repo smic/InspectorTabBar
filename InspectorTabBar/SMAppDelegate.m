@@ -48,7 +48,6 @@
 	return YES;
 }
 
-
 #pragma mark - Tab bar delegate
 
 - (void)tabBar:(SMTabBar *)tabBar willSelectItem:(SMTabBarItem *)item {
