@@ -25,6 +25,7 @@
 @protocol SMTabBarDelegate <NSObject>
 
 @optional
+- (BOOL)tabBar:(SMTabBar *)tabBar shouldSelectItem:(SMTabBarItem *)item;
 - (void)tabBar:(SMTabBar *)tabBar willSelectItem:(SMTabBarItem *)item;
 - (void)tabBar:(SMTabBar *)tabBar didSelectItem:(SMTabBarItem *)item;
 

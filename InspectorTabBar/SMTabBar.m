@@ -62,6 +62,12 @@ static char SMObservationContext;
     
     NSUInteger itemIndex = [sender tag];
     SMTabBarItem *tabBarItem = [self.items objectAtIndex:itemIndex];
+	if ([self.delegate respondsToSelector:@selector(tabBar:shouldSelectItem:)]) {
+		BOOL shouldSelectItem = [self.delegate tabBar:self shouldSelectItem:tabBarItem];
+        if (!shouldSelectItem) {
+			return;
+		}
+    }
     if ([self.delegate respondsToSelector:@selector(tabBar:willSelectItem:)]) {
         [self.delegate tabBar:self willSelectItem:tabBarItem];
     }
