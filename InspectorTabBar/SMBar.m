@@ -10,41 +10,23 @@
 
 @implementation SMBar
 
-#pragma mark - Initialization / Deallocation
-
 // using app and window notifications to change gradient for inactive windows, see
 // http://code.google.com/p/tlanimatingoutlineview/source/browse/trunk/Classes/TLGradientView.m
-- (id)initWithFrame:(NSRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidBecomeActiveNotification object:NSApp];
-        [center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidResignActiveNotification object:NSApp];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [super initWithCoder:coder];
-    if (self) {
-        NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidBecomeActiveNotification object:NSApp];
-        [center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidResignActiveNotification object:NSApp];
-    }
-    return self;
-}
-
-- (void)dealloc {
-    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-    [center removeObserver:self];
-}
-
 - (void)viewWillMoveToWindow:(NSWindow *)newWindow {
     [super viewWillMoveToWindow:newWindow];
     
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     
     NSWindow *oldWindow = self.window;
+	
+	if (!oldWindow && newWindow) {
+		[center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidBecomeActiveNotification object:NSApp];
+        [center addObserver:self selector:@selector(windowDidChange:) name:NSApplicationDidResignActiveNotification object:NSApp];
+	} else if (oldWindow && !newWindow) {
+		[center removeObserver:self name:NSApplicationDidBecomeActiveNotification object:NSApp];
+		[center removeObserver:self name:NSApplicationDidResignActiveNotification object:NSApp];
+	}
+	
     if (oldWindow) {
         [center removeObserver:self name:NSWindowDidResignKeyNotification object:oldWindow];
         [center removeObserver:self name:NSWindowDidBecomeKeyNotification object:oldWindow];
