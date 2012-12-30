@@ -1,8 +1,8 @@
 //
 //  main.m
-//  InspectorTabBar
+//  InspectorTabBarDemo
 //
-//  Created by Stephan Michels on 30.01.12.
+//  Created by Stephan Michels on 11.12.12.
 //  Copyright (c) 2012 Stephan Michels Softwareentwicklung und Beratung. All rights reserved.
 //
 
@@ -10,5 +10,5 @@
 
 int main(int argc, char *argv[])
 {
-    return NSApplicationMain(argc, (const char **)argv);
+	return NSApplicationMain(argc, (const char **)argv);
 }

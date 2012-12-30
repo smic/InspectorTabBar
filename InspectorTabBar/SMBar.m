@@ -44,7 +44,7 @@
     
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     
-    NSWindow *oldWindow = [self window];
+    NSWindow *oldWindow = self.window;
     if (oldWindow) {
         [center removeObserver:self name:NSWindowDidResignKeyNotification object:oldWindow];
         [center removeObserver:self name:NSWindowDidBecomeKeyNotification object:oldWindow];
@@ -59,18 +59,18 @@
 #pragma mark - Drawing
 
 - (void)drawRect:(CGRect)rect {
-    
+
     if ([[self window] isKeyWindow]) {
         static NSGradient *gradient = nil;
         static NSColor *borderColor = nil;
         if (!gradient) {
-            NSColor *color1 = [NSColor colorWithCalibratedWhite:0.851 alpha:1.];
-            NSColor *color2 = [NSColor colorWithCalibratedWhite:0.700 alpha:1.];
+            NSColor *color1 = [NSColor colorWithCalibratedWhite:0.851f alpha:1.0f];
+            NSColor *color2 = [NSColor colorWithCalibratedWhite:0.700f alpha:1.0f];
             gradient = [[NSGradient alloc] initWithStartingColor:color1
                                                      endingColor:color2];
             borderColor = [NSColor colorWithCalibratedWhite:0.416 alpha:1];
         }
-        
+    
         // Draw bar gradient
         [gradient drawInRect:self.bounds angle:90.0];
         

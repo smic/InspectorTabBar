@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'InspectorTabBarDemo' target in the 'InspectorTabBarDemo' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
